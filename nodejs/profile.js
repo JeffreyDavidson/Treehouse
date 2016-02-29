@@ -4,7 +4,7 @@ var https = require("https");
 var http = require("http");
 var printer = require("./printer.js");
 
-function get(username) {
+function get(username, topic) {
 	//Connect to API URL (http://teamtreehouse.com/username.json)
 	var request = https.get("https://teamtreehouse.com/" + username + ".json", function(response) {
 		var body = "";
@@ -18,7 +18,7 @@ function get(username) {
 					//Parse the data
 					var profile = JSON.parse(body);
 					//Print the data
-					printer.printMessage(username, profile.badges.length, profile.points.JavaScript);
+					printer.printMessage(username, profile.badges.length, profile.points[topic], topic);
 				} catch(error) {
 					//Parse Error
 					printer.printError(error);

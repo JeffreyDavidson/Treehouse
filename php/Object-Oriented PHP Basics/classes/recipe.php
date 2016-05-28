@@ -8,6 +8,11 @@ class Recipe
     public $yield;
     public $tag = array();
     public $source = "Alena Holligan";
+
+    public function displayRecipe()
+    {
+        return $this->title . " by " . $this->source;
+    }
 }
 
 $recipe1 = new Recipe();

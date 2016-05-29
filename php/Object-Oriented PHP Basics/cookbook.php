@@ -19,4 +19,5 @@ $recipe1->addTag("Main Course");
 
 $recipe1->setYield("6 servings");
 
-echo Render::displayRecipe($recipe1);
+echo $recipe1;
+echo new Render();

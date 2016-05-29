@@ -29,5 +29,6 @@ $breakfast = new RecipeCollection("Favorite Breakfasts");
 foreach ($cookbook->filterByTag("breakfast") as $recipe) {
     $breakfast->addRecipe($recipe);
 }
-echo Render::listRecipes($breakfast->getRecipeTitles());
+echo "\n\nSHOPPING LIST\n\n";
+echo Render::listShopping($breakfast->getCombinedIngredients());
 //echo Render::displayRecipe($belgian_waffles);

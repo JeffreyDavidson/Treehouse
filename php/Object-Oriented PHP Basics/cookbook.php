@@ -3,15 +3,13 @@
 include "classes/recipe.php";
 include "classes/render.php";
 
-$recipe1 = new Recipe();
+$recipe1 = new Recipe("my first recipe");
 $recipe1->setSource = "Grandma Holligan";
-$recipe1->setTitle("my first recipe");
 $recipe1->addIngredient("egg", 1);
 $recipe1->addIngredient("flour" ,2, "cup");
 
-$recipe2 = new Recipe();
+$recipe2 = new Recipe("my second recipe");
 $recipe2->setSource = "Betty Crocker";
-$recipe2->setTitle("my second recipe");
 
 $recipe1->addIngredient("This is my first instruction");
 $recipe1->addIngredient("This is my second instruction");

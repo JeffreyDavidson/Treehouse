@@ -43,20 +43,25 @@ $name = $full_name;
             <pre>
                 <?php
 
-                $eye_colors = array(
-                    'chris' => 'blue',
-                    'tom' => 'green',
-                    'jim' => 'brown'
-                );
+                $a = 10;
+                $b = 10;
 
-                print_r($eye_colors);
+                $sum = $a + $b;
+                $diff = $a - $b;
+                $product = $a * $b;
+                $quotient = $a / $b;
 
-                $eye_colors['jim'] = 'green';
-
-                echo $eye_colors['jim'];
+                $product++;
 
                 ?>
             </pre>
+
+            <ul>
+                <li><?php //echo $sum; ?></li>
+                <li><?php //echo $diff; ?></li>
+                <li><?php echo $product; ?></li>
+                <li><?php //echo $quotient; ?></li>
+            </ul>
 
         </section>
     </body>

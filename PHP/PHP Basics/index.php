@@ -42,7 +42,16 @@ $name = $full_name;
         <section class="main">
             <pre>
                 <?php
-                echo YEAR;
+                $array_example = array();
+
+                $eye_colors = array('blue', 'green', 'brown');
+
+                print_r($eye_colors);
+
+                $eye_colors[1] = "hazel";
+
+                echo $eye_colors[1];
+
                 ?>
             </pre>
 

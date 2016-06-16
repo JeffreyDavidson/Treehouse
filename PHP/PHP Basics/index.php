@@ -45,24 +45,16 @@ $name = $full_name;
 
                 $a = 10;
                 $b = 10;
+                $c = 20;
+                $d = "10";
 
-                $sum = $a + $b;
-                $diff = $a - $b;
-                $product = $a * $b;
-                $quotient = $a / $b;
-
-                $product++;
+                var_dump( $a == $b ); // equal
+                var_dump( $a === $b ); // identical
+                var_dump( $a != $b ); // not equal
+                var_dump( $a !== $d ); // not identical
 
                 ?>
             </pre>
-
-            <ul>
-                <li><?php //echo $sum; ?></li>
-                <li><?php //echo $diff; ?></li>
-                <li><?php echo $product; ?></li>
-                <li><?php //echo $quotient; ?></li>
-            </ul>
-
         </section>
     </body>
 </html>

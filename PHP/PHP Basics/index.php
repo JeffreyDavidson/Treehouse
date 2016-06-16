@@ -45,10 +45,10 @@ $name = $full_name;
                 $bool = FALSE;
                 //var_dump($bool);
 
-                var_dump((bool) "");
-                var_dump((bool) 0);
-                var_dump((bool) 0.0);
-                var_dump((bool) array());
+                var_dump((bool) "abc");
+                var_dump((bool) 1);
+                var_dump((bool) 1.0);
+                var_dump((bool) -1);
                 ?>
             </pre>
 

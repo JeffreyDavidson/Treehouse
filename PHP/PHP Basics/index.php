@@ -37,9 +37,18 @@ $name = $full_name;
                 $greeting = "Hello, Friends!\n";
                 $greeting{0} = "J";
                 $secondary_greeting = "How are you today?";
-                echo $greeting;
-                echo $secondary_greeting;
+                //echo $greeting;
+                //echo $secondary_greeting;
 
+                $bool = TRUE;
+                //var_dump($bool);
+                $bool = FALSE;
+                //var_dump($bool);
+
+                var_dump((bool) "");
+                var_dump((bool) 0);
+                var_dump((bool) 0.0);
+                var_dump((bool) array());
                 ?>
             </pre>
 

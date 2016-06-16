@@ -43,8 +43,7 @@ $name = $full_name;
                 ?>
             </pre>
             <ul>
-                <li><?php echo gettype($one) ?></li>
-                <li><?php echo gettype($string_one) ?></li>
+                <li><?php echo $one + $two - $three ?></li>
             </ul>
         </section>
     </body>

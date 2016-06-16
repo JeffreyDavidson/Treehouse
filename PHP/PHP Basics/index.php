@@ -39,11 +39,14 @@ $name = $full_name;
                 $three = 3;
                 $string_one = "1";
 
+                $distance_to_home = 1.2;
+                $distance_to_work = 2.5
 
                 ?>
             </pre>
             <ul>
-                <li><?php echo $one + $two - $three ?></li>
+                <li><?php echo $one + $two - $three; ?></li>
+                <li><?php echo $distance_to_work + $distance_to_home + $three; ?></li>
             </ul>
         </section>
     </body>

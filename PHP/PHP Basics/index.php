@@ -53,6 +53,11 @@ $name = $full_name;
                 var_dump( $a != $b ); // not equal
                 var_dump( $a !== $d ); // not identical
 
+                var_dump( $a < $b ); // less than
+                var_dump( $a > $b ); // greater than
+                var_dump( $a <= $b ); // less than or equal to
+                var_dump( $a >= $b ); // greater than or equal to
+
                 ?>
             </pre>
         </section>

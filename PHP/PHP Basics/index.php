@@ -42,15 +42,18 @@ $name = $full_name;
         <section class="main">
             <pre>
                 <?php
-                $jeffrey = array(22, "black", 2.5, TRUE);
 
-                $eye_colors = array('blue', 'green', 'brown');
+                $eye_colors = array(
+                    'chris' => 'blue',
+                    'tom' => 'green',
+                    'jim' => 'brown'
+                );
 
-                print_r($jeffrey);
+                print_r($eye_colors);
 
-                //$eye_colors[1] = "hazel";
+                $eye_colors['jim'] = 'green';
 
-                //echo $eye_colors[1];
+                echo $eye_colors['jim'];
 
                 ?>
             </pre>

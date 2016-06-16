@@ -43,20 +43,13 @@ $name = $full_name;
             <pre>
                 <?php
 
-                $a = 10;
-                $b = 10;
-                $c = 20;
-                $d = "10";
+                $a = TRUE;
+                $b = FALSE;
 
-                var_dump( $a == $b ); // equal
-                var_dump( $a === $b ); // identical
-                var_dump( $a != $b ); // not equal
-                var_dump( $a !== $d ); // not identical
 
-                var_dump( $a < $b ); // less than
-                var_dump( $a > $b ); // greater than
-                var_dump( $a <= $b ); // less than or equal to
-                var_dump( $a >= $b ); // greater than or equal to
+                var_dump( $a and $b ); // TRUE a and b are TRUE
+                var_dump( $a or $b ); // TRUE a or b are TRUE
+                var_dump( ! $a ); // TRUE a is NOT TRUE
 
                 ?>
             </pre>

@@ -34,20 +34,15 @@ $name = $full_name;
         <section class="main">
             <pre>
                 <?php
-                $one = 1;
-                $two = 2;
-                $three = 3;
-                $string_one = "1";
-
-                $distance_to_home = 1.2;
-                $distance_to_work = 2.5
+                $greeting = "Hello, Friends!\n";
+                $greeting{0} = "J";
+                $secondary_greeting = "How are you today?";
+                echo $greeting;
+                echo $secondary_greeting;
 
                 ?>
             </pre>
-            <ul>
-                <li><?php echo $one + $two - $three; ?></li>
-                <li><?php echo $distance_to_work + $distance_to_home + $three; ?></li>
-            </ul>
+
         </section>
     </body>
 </html>

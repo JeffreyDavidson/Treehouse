@@ -1,4 +1,12 @@
 <?php
+
+define("YEAR", 2014);
+define("JOB_TITLE", "Teacher");
+define("MAX_BADGES", "150000");
+
+//invalid constant name
+//define("2LEGIT", "to quit");
+
 // This is my first name.
 $name = "Jeff";
 
@@ -34,21 +42,7 @@ $name = $full_name;
         <section class="main">
             <pre>
                 <?php
-                $greeting = "Hello, Friends!\n";
-                $greeting{0} = "J";
-                $secondary_greeting = "How are you today?";
-                //echo $greeting;
-                //echo $secondary_greeting;
-
-                $bool = TRUE;
-                //var_dump($bool);
-                $bool = FALSE;
-                //var_dump($bool);
-
-                var_dump((bool) "abc");
-                var_dump((bool) 1);
-                var_dump((bool) 1.0);
-                var_dump((bool) -1);
+                echo YEAR;
                 ?>
             </pre>
 

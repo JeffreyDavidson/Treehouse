@@ -1,19 +1,18 @@
 <?php
 
-define("YEAR", 2014);
-define("JOB_TITLE", "Teacher");
+define("USE_FULL_NAME", TRUE);
 define("MAX_BADGES", "150000");
 
-//invalid constant name
-//define("2LEGIT", "to quit");
-
-// This is my first name.
-$name = "Jeff";
-
-
+$first_name = "Jeffrey";
+$last_name = "Davidson"
 $location = "Orlando, FL";
-$full_name = "Mike the Frog";
-$name = $full_name;
+$role = "Student";
+
+if( USE_FULL_NAME == TRUE ){
+    $name = $first_name . ' ' . $last_name;
+} else {
+    $name = $first_name;
+}
 
 ?>
 

@@ -14,6 +14,14 @@ if( USE_FULL_NAME == TRUE ){
     $name = $first_name;
 }
 
+if( $role == "student"){
+    $info = "I am a Student at Treehouse";
+} elseif( $role == "Tutor"){
+    $info = "I am a Tutor at Treehouse";
+} else {
+    $info = "I am just visiting";
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -32,7 +40,7 @@ if( USE_FULL_NAME == TRUE ){
             <h1><?php echo $name; ?></h1>
             <p><?php  echo $location; ?></p>
             <hr/>
-            <p>Welcome to PHP Basics!</p>
+            <p><?php echo $info ?></p>
             <hr/>
             <ul class="social">
                 <li><a href=""><span class="icon twitter"></span></a></li>
@@ -42,13 +50,7 @@ if( USE_FULL_NAME == TRUE ){
             <pre>
                 <?php
 
-                $a = TRUE;
-                $b = FALSE;
 
-
-                var_dump( $a and $b ); // TRUE a and b are TRUE
-                var_dump( $a or $b ); // TRUE a or b are TRUE
-                var_dump( ! $a ); // TRUE a is NOT TRUE
 
                 ?>
             </pre>

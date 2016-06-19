@@ -22,6 +22,8 @@ if( $role == "student"){
     $info = "I am just visiting";
 }
 
+$social_icons = array('twitter', 'facebook', 'google');
+
 ?>
 
 <!DOCTYPE html>
@@ -43,7 +45,12 @@ if( $role == "student"){
             <p><?php echo $info ?></p>
             <hr/>
             <ul class="social">
-                <li><a href=""><span class="icon twitter"></span></a></li>
+                <?php
+                foreach($social_icons as $icon)
+                ?>
+                <li><a href=""><span class="icon <?php echo $icon ?>"></span></a></li>
+                <?php
+                ?>
             </ul>
         </section>
         <section class="main">

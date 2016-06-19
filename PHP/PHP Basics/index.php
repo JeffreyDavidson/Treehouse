@@ -1,7 +1,7 @@
 <?php
 
 define("USE_FULL_NAME", TRUE);
-define("MAX_BADGES", "150000");
+define("MAX_BADGES", 20);
 
 $first_name = "Jeffrey";
 $last_name = "Davidson"
@@ -47,13 +47,15 @@ if( $role == "student"){
             </ul>
         </section>
         <section class="main">
-            <pre>
+            <ul>
                 <?php
 
-
+                for($counter = 0; $counter <= MAX_BADGES; $counter++){
+                    echo "<li>" . $counter . "</li>";
+                }
 
                 ?>
-            </pre>
+            </ul>
         </section>
     </body>
 </html>

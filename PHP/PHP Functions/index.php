@@ -1,21 +1,12 @@
 <?php
 
-function hello($arr) {
-    if(is_array($arr)) {
-        foreach($arr as $name) {
-            echo "Hello, $name, how's it going!</br>";
-        }
+function get_info($name, $title = Null) {
+
+    if($title) {
+        echo "$name has arrived, they are with us as a $title";
     } else {
-        echo 'Hello, friends!';
+        echo "$name has arrived, welcome!";
     }
 }
 
-$names = array(
-    'Jeffrey',
-    'Hampton',
-    'Mike',
-    'Charley'
-);
-
-hello($names);
-
+get_info('Mike', 'frog');

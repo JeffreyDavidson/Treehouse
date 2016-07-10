@@ -1,18 +1,21 @@
 <?php
 
-function hello() {
-    echo "Hello, World!";
-}
-
-$current_user = "Mike";
-function is_mike() {
-    global $current_user;
-    if($current_user == "Mike") {
-        echo "It is Mike!";
+function hello($arr) {
+    if(is_array($arr)) {
+        foreach($arr as $name) {
+            echo "Hello, $name, how's it going!</br>";
+        }
     } else {
-        echo "Nope, it is not Mike.";
+        echo 'Hello, friends!';
     }
 }
 
-is_mike();
+$names = array(
+    'Jeffrey',
+    'Hampton',
+    'Mike',
+    'Charley'
+);
+
+hello($names);
 

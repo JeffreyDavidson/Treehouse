@@ -1,15 +1,17 @@
 <?php
 
-$phrase = "We only hit what we aim for";
+$names = array(
+    'Jeffrey' => 'Student',
+    'Chris' => 'Teacher',
+    'Hampton' => 'Teacher'
+);
 
-$len = strlen($phrase);
+//foreach (array_keys($names) as $name) {
+//    echo "Hello, $name</br>";
+//}
 
-//echo $len;
+function print_info($value, $key) {
+    echo "$key is a $value.</br>";
+}
 
-// substr
-
-// strpos
-
-$start = strpos($phrase, 'hit');
-echo substr($phrase, $start);
-
+array_walk($names, 'print_info');

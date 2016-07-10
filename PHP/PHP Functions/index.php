@@ -1,15 +1,15 @@
 <?php
 
-function add_up($a, $b) {
-    $arr = array(
-        $a,
-        $b,
-        $a + $b
-    );
-    return $arr;
+function answer() {
+    return 42;
 }
 
-$value = add_up(2, 4);
+function add_up($a, $b) {
+    return $a + $b;
+}
 
-echo $value[2];
+$func = 'add_up';
 
+$num =  $func(5, 10);
+
+echo $num;

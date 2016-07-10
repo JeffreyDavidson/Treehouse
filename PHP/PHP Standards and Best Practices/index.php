@@ -1,18 +1,29 @@
 <?php
 
-$dvone = new DateTime('August 1, 1972');
-$spike = new DateTime('August 13, 1970');
+$utcDateTime = new DateTime('2016-07-10 09:05', new DateTimeZone('UTC'));
 
-// Who is older?
+$localDateTime = clone $utcDateTime;
 
-if ($dvone < $spike) {
-    echo '<p>D-Von is older thann Spike</p>';
-} else {
-    echo '<p>Spike is older thann D-Von</p>';
-}
+$localDateTime->setTimezone(new DateTimeZone('America/New_York'));
 
-// Age Difference
+?>
 
-$diff = $dvone->diff($spike);
+<p>The UTC date/time is <?php echo $utcDateTime->format("Y-m-d H:i:s"); ?></p>
+<p>The New York date/time is <?php echo $localDateTime->format("Y-m-d H:i:s"); ?></p>
 
-echo $diff->format("<p>There is %y years, and %m months and %d days between Spike and D-Von</p>");
+
+<?php
+
+// $publishDate = $_POST['publish_date'];
+$publishDate = '2016-07-10 12:00:00';
+
+$localDateTime = new DateTime($publishDate, new DateTimeZone('America/New_York'));
+
+$utcDateTime = clone $localDateTime;
+
+$utcDateTime->setTimezone(new DateTimeZone('UTC'));
+
+?>
+
+<p>The UTC date/time is <?php echo $utcDateTime->format("Y-m-d H:i:s"); ?></p>
+<p>The New York date/time is <?php echo $localDateTime->format("Y-m-d H:i:s"); ?></p>

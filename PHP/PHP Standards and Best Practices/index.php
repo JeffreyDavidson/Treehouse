@@ -1,29 +1,22 @@
 <?php
 
-$utcDateTime = new DateTime('2016-07-10 09:05', new DateTimeZone('UTC'));
+//phpinfo();
+//exit;
 
-$localDateTime = clone $utcDateTime;
+mb_internal_encoding('UTF-8');
+mb_http_output('UTF-8');
 
-$localDateTime->setTimezone(new DateTimeZone('America/New_York'));
+$string = 'Rychlá hnědá liška zakopl přes plot.';
 
+header('Content-Type: text/html; charset=utf-8');
 ?>
-
-<p>The UTC date/time is <?php echo $utcDateTime->format("Y-m-d H:i:s"); ?></p>
-<p>The New York date/time is <?php echo $localDateTime->format("Y-m-d H:i:s"); ?></p>
-
-
-<?php
-
-// $publishDate = $_POST['publish_date'];
-$publishDate = '2016-07-10 12:00:00';
-
-$localDateTime = new DateTime($publishDate, new DateTimeZone('America/New_York'));
-
-$utcDateTime = clone $localDateTime;
-
-$utcDateTime->setTimezone(new DateTimeZone('UTC'));
-
-?>
-
-<p>The UTC date/time is <?php echo $utcDateTime->format("Y-m-d H:i:s"); ?></p>
-<p>The New York date/time is <?php echo $localDateTime->format("Y-m-d H:i:s"); ?></p>
+<!doctype html>
+<html>
+    <head>
+        <title>UTF-8 Test</title>
+    </head>
+    <body>
+        <p>Upper: <?php echo mb_strtoupper($string) ?></p>
+        <p>Count: <?php echo mb_strlen($string) ?></p>
+    </body>
+</html>

@@ -1,9 +1,15 @@
 <?php
 
-$name = 'Jeffrey';
+$phrase = "We only hit what we aim for";
 
-$greet = function()  use($name) {
-    echo "Hello $name!";
-};
+$len = strlen($phrase);
 
-$greet();
+//echo $len;
+
+// substr
+
+// strpos
+
+$start = strpos($phrase, 'hit');
+echo substr($phrase, $start);
+

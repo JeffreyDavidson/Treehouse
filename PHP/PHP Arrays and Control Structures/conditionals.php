@@ -3,6 +3,49 @@
 $a = 0;
 $b = 5;
 
+/*
+if ($a == $b) {
+    echo 'values are equal';
+} else {
+    echo 'values are NOT equal';
+}
+
+if (($a == $b) == false) {
+    echo 'values are  NOT equal';
+}
+
+if ($a <> $b) {
+    echo 'values are  NOT equal';
+}
+*/
+
+/*
+if ($a != $b) {
+    echo 'values are  NOT equal';
+}
+
+if ($a !== $b) {
+    echo 'NOT identical';
+}
+*/
+
+if ($a) {
+    echo 'true';
+}
+
+if (!$a) {
+    echo 'false';
+}
+
+if ($a == false) {
+    echo 'false';
+}
+
+if ($a != true) {
+    echo 'false';
+}
+
+/*
 if ($a == $b) {
     echo ' values are equal ';
 }  elseif ($a < $b) {
@@ -12,7 +55,9 @@ if ($a == $b) {
 } else {
     echo ' values are NOT equal ';
 }
+*/
 
+/*
 $score = 30;
 if ($score >= 59) {
     echo 'You completed the level!';
@@ -21,5 +66,5 @@ if ($score >= 59) {
 } else {
     echo 'Please try again';
 }
-
+*/
 ?>

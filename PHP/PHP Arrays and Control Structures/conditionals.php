@@ -29,6 +29,7 @@ if ($a !== $b) {
 }
 */
 
+/*
 if ($a) {
     echo 'true';
 }
@@ -44,6 +45,7 @@ if ($a == false) {
 if ($a != true) {
     echo 'false';
 }
+*/
 
 /*
 if ($a == $b) {
@@ -67,4 +69,17 @@ if ($score >= 59) {
     echo 'Please try again';
 }
 */
+
+$num = 1;
+
+if ($num >= 10) {
+    if ($num <= 1000) {
+        echo "Your number is within the range";
+    } else {
+        echo "Your number is greater than 1000, NOT wihin the range";
+    }
+} else {
+    echo "Your number is less than 10, NOT within the range";
+}
+
 ?>

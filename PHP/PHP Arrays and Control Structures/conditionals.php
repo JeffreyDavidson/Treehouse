@@ -70,16 +70,39 @@ if ($score >= 59) {
 }
 */
 
-$num = 1;
+$num = 10000;
 
+/*
+if ($num == 10 || is_string($num)) {
+    echo '10 or string';
+} else {
+    echo 'NOT 10 or string';
+}
+(
+
+/*
+if ($num >= 10 && $num <= 1000) {
+    echo 'Your number is within the range';
+} else {
+    echo 'Your number is NOT within the range';
+}
+*/
+
+/*
 if ($num >= 10) {
     if ($num <= 1000) {
-        echo "Your number is within the range";
+        echo 'Your number is within the range';
     } else {
-        echo "Your number is greater than 1000, NOT wihin the range";
+        echo 'Your number is greater than 1000, NOT within the range';
     }
 } else {
-    echo "Your number is less than 10, NOT within the range";
+    echo 'Your number is less than 10, NOT within the range';
 }
+*/
+
+$var1 = true && false;
+$var2 = true and false;
+
+var_dump($var1, $var2);
 
 ?>
